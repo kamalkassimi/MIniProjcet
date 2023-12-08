@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="end"
+        android:layout_alignParentEnd="true"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        tools:text="My title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kamal"
+        android:layout_below="@id/title"
+        android:textColor="#393939"
+        tools:text="My long long long descrption"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_fin1"
+        android:layout_below="@id/kamal"
+        android:textSize="14dp"
+        android:gravity="end"
+        android:textColor="#E53935"
+        tools:text="Jan 22 2020 "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_debu11"
+        android:layout_below="@id/kamal"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textColor="#7CB342"
+        tools:text="Jan 21 2020 "
+        />
+
+    <TextView
+        android:id="@+id/option11"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kamal"
+        android:layout_marginTop="0dp"
+        android:gravity="start"
+        android:textColor="#427C05"
+        android:textSize="14dp"
+        tools:ignore="UnknownId"
+        tools:text="facile " />
+
+</RelativeLayout>
