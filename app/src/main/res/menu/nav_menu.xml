@@ -14,7 +14,6 @@
             android:title="Delete"
             app:showAsAction="always"/>
 
-
         <item
             android:id="@+id/icon_help"
             android:icon="@drawable/help_icon"

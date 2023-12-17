@@ -1,9 +1,12 @@
 package com.example.miniprojetlogin;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
         imput_user = findViewById(R.id.editText);
         imput_password = findViewById(R.id.editText2);
         btn= findViewById(R.id.btn);
-//        String imput_user1 = imput_user.getText().toString();
-//        String  imput_password1 =  imput_password.getText().toString();
+//        Toolbar toolbar1 = findViewById(R.id.menu);
+//        setSupportActionBar(toolbar1);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         ArrayList<String> data_user= new ArrayList<>();
 //        data_user.add("kamal");
 //        data_user.add("othman");
@@ -46,5 +51,24 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_usar, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        // Handle item selection.
+        if (itemId == R.id.menuAdd) {
+            Toast.makeText(this, "Ajouter", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else {
+            return super.onOptionsItemSelected(item);
+        }
+
+
     }
 }

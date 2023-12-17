@@ -38,6 +38,6 @@ public class New_task extends AppCompatActivity {
         String option1 = option.getText().toString();
 //        String checkbox11 = checkBox1. ;
 
-        kamalActivity.listdata.add(new data(descrption,dateDebut,dateFin,option1 ,false));
+        kamalActivity.listdata.add(new data(descrption,dateDebut,dateFin,option1 ,true));
     }
 }

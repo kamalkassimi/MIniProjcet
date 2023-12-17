@@ -32,7 +32,7 @@ public class MyAdapdare extends RecyclerView.Adapter<MyAdapdare.WorkHolder> {
             data_fin11 = view.findViewById(R.id.data_fin1);
             data_debu = view.findViewById(R.id.data_debu11);
             option = view.findViewById(R.id.option11);
-            checkBox = view.findViewById(R.id.check);
+           checkBox = view.findViewById(R.id.check);
 //            button = view.findViewById(R.id.btn);
         }
     }
@@ -51,11 +51,11 @@ public class MyAdapdare extends RecyclerView.Adapter<MyAdapdare.WorkHolder> {
         holder.data_debu.setText(list.getData_deub());
         holder.option.setText(list.getOption());
         holder.checkBox.setChecked(list.isCheck());
-        holder.button.setOnClickListener((View)->{
-                lists.remove(list);
-                removec.add(list);
-                adapdare.notifyDataSetChanged();
-        });
+//        holder.button.setOnClickListener((View)->{
+//                lists.remove(list);
+//                removec.add(list);
+//                adapdare.notifyDataSetChanged();
+//        });
 //        String priority = ListWork.get(position).getPriorite();
 //        if (priority == "Important"){
 //            holder.text3.setTextColor(Color.RED);
