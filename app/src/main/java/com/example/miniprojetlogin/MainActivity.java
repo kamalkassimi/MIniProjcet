@@ -65,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Ajouter", Toast.LENGTH_SHORT).show();
             return true;
         }
+        if (itemId == R.id.menuSave) {
+            Toast.makeText(this, "Sorty", Toast.LENGTH_SHORT).show();
+            finish();
+            return true;
+        }
         else {
             return super.onOptionsItemSelected(item);
         }

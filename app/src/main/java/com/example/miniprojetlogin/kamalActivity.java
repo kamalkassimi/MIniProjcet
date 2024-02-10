@@ -26,7 +26,7 @@ public class kamalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal);
         recyclerView = findViewById(R.id.per_rec);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         Toolbar toolbar = findViewById(R.id.per_bar);
         btn = findViewById(R.id.add_taks);
         setSupportActionBar(toolbar);
